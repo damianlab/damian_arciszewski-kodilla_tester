@@ -2,12 +2,13 @@ public class Notebook {
     int weight;
     int price;
     int year;
+    String strWeight;
 
     public Notebook(int weight, int price, int year) {
         this.weight = weight;
         this.price = price;
         this.year = year;
-
+        this.strWeight = String.valueOf(weight);
     }
     public void checkPrice() {
         if(this.price < 600) {
@@ -19,6 +20,10 @@ public class Notebook {
         else  {
             System.out.println("This notebook is expensive.");
         }
+    }
+
+    public String getWeight() {
+        return this.strWeight;
     }
 
     public void checkWeight() {
