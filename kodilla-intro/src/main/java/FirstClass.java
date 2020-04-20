@@ -20,6 +20,8 @@ public class FirstClass {
         for( int i = 0; i < users.length; i++) {
             sum = sum + users[i].age;
 
+
+
         }
         /*int size;
         size = users.length;*/
@@ -38,10 +40,7 @@ public class FirstClass {
         System.out.println(sum);
         System.out.println(averageAge);
         /*System.out.println(size);*/
-
-
-
-    }
+        }
     }
        /* int maxage;
         int i;
