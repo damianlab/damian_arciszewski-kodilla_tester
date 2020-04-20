@@ -1,8 +1,8 @@
 import java.util.Random;
 public class RandomNumbers {
     int temp;
-    int min = 30;
-    int max = 0;
+    int min;
+    int max;
     public int getCountOfRandomNumber() {
         Random random = new Random();
         int result = 0;
@@ -10,18 +10,20 @@ public class RandomNumbers {
         int maxSum = 5001;
         while (sum < maxSum) {
             temp = random.nextInt(30); // Returns number between 0-30
+            min = temp;
+            max = min;
             sum = sum + temp;
             result++;
         }
         return result;
     }
     public int getMin() {
-        if(temp < min) { min = temp; }
+        while(temp < min) { min = temp; }
 
         return min;
     }
     public int getMax() {
-        if(temp > max) { max = temp; }
+        while(temp > max) { max = temp; }
 
         return max;
     }
@@ -35,7 +37,7 @@ public class RandomNumbers {
         int minNumber = result.getMin();
         System.out.println(minNumber);
         int maxNumber = result.getMax();
-        System.out.println(minNumber);
+        System.out.println(maxNumber);
     }
 }
 // End
