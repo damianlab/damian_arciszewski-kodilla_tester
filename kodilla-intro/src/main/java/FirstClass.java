@@ -1,47 +1,41 @@
 public class FirstClass {
         public static void main(String[] args) {
-        User users[] = new User[4];
+                User users[] = new User[4];
 
-        users[0] = new User("Marek", 30);
-        users[1] = new User("Ula", 33);
-        users[2] = new User("Sebastian", 40);
-        users[3] = new User("Kris", 36);
+                users[0] = new User("Marek", 30);
+                users[1] = new User("Ula", 33);
+                users[2] = new User("Sebastian", 40);
+                users[3] = new User("Kris", 36);
 
+                double sum = 0;
+                for (int i = 0; i < users.length; i++) {
+                        sum = sum + users[i].age;
+                }
+                double averageAge;
+                averageAge = sum / users.length;
+                System.out.println("Srednia wieku: " + averageAge);
 
-        /* int index = 0;
-        int oldest = users[0].age;
-
-        for (int a = 0; a < users.length; a++) {
-            if (users[a].age > oldest)
-                index = a;
-                oldest = users[a].age;
-            } */
-        double sum = 0;
-        for( int i = 0; i < users.length; i++) {
-            sum = sum + users[i].age;
-
-
-
+                int i = 0;
+                while(users[i].age < averageAge) {
+                        System.out.println("Osoba ponizej sredniego wieku: " + users[i].name + " " + "Wiek: " + users[i].age);
+                        i++;
+                }
         }
-        /*int size;
-        size = users.length;*/
-
-        double averageAge;
-        averageAge = sum / users.length;
+}
 
 
-        for(int x = 0; x < users.length; x++) {
-            if(users[x].age < averageAge) { System.out.println(users[x].name + users[x].age); }
-
-        }
 
 
-        /*System.out.println("Person: " + users[index].name + "is the oldest:" + users[index].age); */
-        System.out.println(sum);
-        System.out.println(averageAge);
+
+
+
+
+
+
+
+
         /*System.out.println(size);*/
-        }
-    }
+
        /* int maxage;
         int i;
 
