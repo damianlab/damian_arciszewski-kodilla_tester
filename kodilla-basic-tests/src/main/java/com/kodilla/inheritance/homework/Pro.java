@@ -1,4 +1,4 @@
-package com.kodilla.inheritance;
+package com.kodilla.inheritance.homework;
 
 public class Pro extends OperatingSystem {  // Dodatkowa klasa rozszerzajaca klasa OperatingSystem
 

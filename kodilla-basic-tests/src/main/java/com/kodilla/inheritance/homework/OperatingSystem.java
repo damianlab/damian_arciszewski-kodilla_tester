@@ -1,4 +1,4 @@
-package com.kodilla.inheritance;
+package com.kodilla.inheritance.homework;
 
 public class OperatingSystem {
     private int type;
