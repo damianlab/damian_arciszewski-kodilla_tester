@@ -1,14 +1,15 @@
 package com.kodilla.abstracts.homework;
 
-public class Person extends Job {
+public class Person {
 
-    private String firstName;
-    private int age;
+    public String firstName;
+    public int age;
+    public String job;
 
-    public Person( String firstName, int age, String nameOfJob, double salary) {
-        super(nameOfJob, salary);
+    public Person( String firstName, int age, String job) {
         this.firstName = firstName;
         this.age = age;
+        this.job = job;
     }
 
     public String getFirstName() {
@@ -19,13 +20,10 @@ public class Person extends Job {
         return age;
     }
 
-    public void dispData() { System.out.println(getFirstName() + getSalary() + getNameOfJob());
+    public String getJob() {
+        return job;
     }
 
-    @Override
-    public void getResponsibilities() {
-        System.out.println("Check");
-    }
 
     }
 
