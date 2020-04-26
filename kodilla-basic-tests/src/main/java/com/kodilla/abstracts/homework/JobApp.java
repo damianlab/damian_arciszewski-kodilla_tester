@@ -18,15 +18,16 @@ public class JobApp {
         Physiotherapist physiotherapist = new Physiotherapist();
         Doctor doctor = new Doctor();
 
+
         int i = 0;
         for (i = 0; i <=3 ; i++) {
-            if (person[i].job == "Nurses")
+            if (person[i].job.equals("Nurses"))
                 System.out.println("Name: " + person[i].firstName + " " +"\nNurse responsibilities: " + nurses.getResponsibilities());
 
-            if (person[i].job == "Physiotherapist")
+            if (person[i].job.equals("Physiotherapist"))
                 System.out.println("Name: " + person[i].firstName + " " + "\nPhysiotherapist responsibilities: " + physiotherapist.getResponsibilities());
 
-            if (person[i].job == "Doctor")
+            if (person[i].job.equals("Doctor"))
                 System.out.println("Name: " + person[i].firstName + " " + "\nDoctor responsibilities: " + doctor.getResponsibilities());
         }
         }
