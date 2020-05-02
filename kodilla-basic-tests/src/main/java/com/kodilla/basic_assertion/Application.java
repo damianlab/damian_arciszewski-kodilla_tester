@@ -10,7 +10,7 @@ public class Application {
  double c = 5;
  double d = 2;
  int sumResult = calculator.sum(a, b); // Nowa zmienna wywolujaca sume z ckasy kalkulator. Obliczenie ktore sprawdzamy
- boolean correct = ResultChecker.assertEquals(13, sumResult); // Nowa zmienna typu boolean odpowiadajaca za porownanie wyniku obliczonego przez kod z wynikiem oczekiwanym.
+ boolean correct = ResultChecker.assertEquals(14, sumResult); // Nowa zmienna typu boolean odpowiadajaca za porownanie wyniku obliczonego przez kod z wynikiem oczekiwanym.
  int subtractResult = calculator.subtract(a, b);
  boolean correctSubtract = ResultChecker.assertEqualsSecond(-3, subtractResult);
  double squareResult = calculator.square(c, d);
