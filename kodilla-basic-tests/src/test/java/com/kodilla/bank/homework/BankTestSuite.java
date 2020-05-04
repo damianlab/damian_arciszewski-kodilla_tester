@@ -95,17 +95,6 @@ public class BankTestSuite {
         assertEquals(100, bank.getDepositAvarage(), 0.001);
         assertEquals(-50, bank.getWithrawAvarage(), 0.001);
     }
-    @Test
-    public void shouldAddTwoBanksToArray() {
-        Bank cashBank = new Bank();
-        cashBank.addBank("MRT");
-        cashBank.addBank("PKO");
-
-        String[] banks = cashBank.getNumberOfBanks();
-        assertEquals(2, banks.length);
-        assertEquals("MRT", banks[0]);
-        assertEquals("PKO", banks[1]);
-    }
 
 }
 
