@@ -45,15 +45,5 @@ public class CashMachineTestSuite {
         assertEquals(200, cashmachine.getAvarage(), 0.01); // dodatkowa wartosc delta to dopuszczalna roznica pomiedzy wynikami
 
     }
-    @Test
-    public void shouldAddTwoBanksToArray() {
-        CashMachine cashmachine = new CashMachine();
-        cashmachine.addBank("MRT");
-        cashmachine.addBank("PKO");
 
-        String[] banks = cashmachine.getNumberOfBanks();
-        assertEquals(2, banks.length);
-        assertEquals("MRT", banks[0]);
-        assertEquals("PKO", banks[1]);
-    }
 }
