@@ -9,21 +9,19 @@ public class Opel implements Car{
         this.values = new int[0];
     }
 
-    public void increaseSpeed(int value) { // Metoda zwiekszajaca predkosc
-        if (value > 0 && value <40) {
+    public void increaseSpeed() { // Metoda zwiekszajaca predkosc
             this.size++;
             int[] newTab = new int[this.size];
             System.arraycopy(values, 0, newTab, 0, values.length);
-            newTab[this.size - 1] = value;
-            this.values = newTab; }
-    }
-    public void decreaseSpeed(int value) { // Metoda zmniejszakaca predkosc
-        if (value < 0) {
+            newTab[this.size - 1] = 6;
+            this.values = newTab;
+}
+    public void decreaseSpeed() { // Metoda zmniejszakaca predkosc
             this.size++;
             int[] newTab = new int[this.size];
             System.arraycopy(values, 0, newTab, 0, values.length);
-            newTab[this.size - 1] = value;
-            this.values = newTab; }
+            newTab[this.size - 1] = -2;
+            this.values = newTab;
     }
     public int[] getValues() { // metoda zwracajaca dlugosc tabeli
         return values;
