@@ -1,6 +1,6 @@
 package com.kodilla.collections.interfaces.homework;
 
-public class Ford {
+public class Ford implements Car{
     private int[] values;
     private int size;
 
@@ -10,7 +10,7 @@ public class Ford {
     }
 
     public void increaseSpeed(int value) { // Metoda zwiekszajaca predkosc
-        if (value > 0 && value <40) {
+         if (value > 0 && value <40) {
             this.size++;
             int[] newTab = new int[this.size];
             System.arraycopy(values, 0, newTab, 0, values.length);

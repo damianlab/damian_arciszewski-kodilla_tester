@@ -1,6 +1,6 @@
 package com.kodilla.collections.interfaces.homework;
 
-public class Opel {
+public class Opel implements Car{
     private int[] values;
     private int size;
 

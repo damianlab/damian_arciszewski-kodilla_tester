@@ -1,6 +1,6 @@
 package com.kodilla.collections.interfaces.homework;
 
-public class Fiat {
+public class Fiat implements Car{
     private int[] values;
     private int size;
 
