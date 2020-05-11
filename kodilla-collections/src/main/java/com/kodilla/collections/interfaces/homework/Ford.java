@@ -1,11 +1,15 @@
 package com.kodilla.collections.interfaces.homework;
 
+import java.util.Random;
+
 public class Ford implements Car{
         int speed;
 
         @Override
         public void increaseSpeed() { // metoda zwiekszajaca predkosc
-            speed = speed + 5;
+            Random random = new Random();
+            int step = random.nextInt(50);
+            speed = speed + step;
         }
 
         @Override

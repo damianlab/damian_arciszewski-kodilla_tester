@@ -11,6 +11,7 @@ public class CarUtils {
         System.out.println("Car name: " + getCarName(car));
         System.out.println("Car speed: " + car.getSpeed());
 
+
     }
     private static String getCarName(Car car) {
         if (car instanceof Fiat)

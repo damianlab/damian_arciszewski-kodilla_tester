@@ -9,10 +9,12 @@ import java.util.Random;
 public class CarsApplication {
     public static void main(String[] args) {
         Car[] cars = new Car[15];
-        for(int n=0; n< cars.length; n++)
+        for (int n = 0; n < cars.length; n++)
             cars[n] = drawCar();
-        for(Car car : cars) // konstrukcja, wykona pewną operację dla każdego elementu tablicy cars
-CarUtils.describeCar(car);
+        for (Car car : cars) {// konstrukcja, wykona pewną operację dla każdego elementu tablicy cars
+            car.increaseSpeed();
+            CarUtils.describeCar(car);
+        }
     }
     public static Car drawCar() {
         Random random = new Random();
