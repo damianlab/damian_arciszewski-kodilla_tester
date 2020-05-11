@@ -1,6 +1,28 @@
 package com.kodilla.collections.interfaces.homework;
 
 public class Ford implements Car{
+        int speed;
+
+        @Override
+        public void increaseSpeed() { // metoda zwiekszajaca predkosc
+            speed = speed + 5;
+        }
+
+        @Override
+        public void decreaseSpeed() {  // metoda zmniejszajaca predkosc
+            speed = speed - 4;
+
+        }
+
+        @Override
+        public int getSpeed() { // metoda zwracająca prędkość
+        return speed;
+        }
+
+    }
+
+
+    /*
     private int[] values;
     private int size;
 
@@ -16,6 +38,7 @@ public class Ford implements Car{
             System.arraycopy(values, 0, newTab, 0, values.length);
             newTab[this.size - 1] = 5;
             this.values = newTab;
+
     }
     public void decreaseSpeed() { // Metoda zmniejszakaca predkosc
         //if (value < 0) {
@@ -24,6 +47,7 @@ public class Ford implements Car{
             System.arraycopy(values, 0, newTab, 0, values.length);
             newTab[this.size - 1] = -3;
             this.values = newTab;
+
     }
     public int[] getValues() { // metoda zwracajaca dlugosc tabeli
         return values;
@@ -38,4 +62,7 @@ public class Ford implements Car{
         return speed;
 
     }
+
+
 }
+*/

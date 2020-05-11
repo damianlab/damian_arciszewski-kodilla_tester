@@ -1,39 +1,21 @@
 package com.kodilla.collections.interfaces.homework;
 
 public class Opel implements Car{
-    private int[] values;
-    private int size;
+    int speed;
 
-    public Opel() {
-        this.size = 0;
-        this.values = new int[0];
+    @Override
+    public void increaseSpeed() {
+        speed = speed + 6;
     }
 
-    public void increaseSpeed() { // Metoda zwiekszajaca predkosc
-            this.size++;
-            int[] newTab = new int[this.size];
-            System.arraycopy(values, 0, newTab, 0, values.length);
-            newTab[this.size - 1] = 6;
-            this.values = newTab;
-}
-    public void decreaseSpeed() { // Metoda zmniejszakaca predkosc
-            this.size++;
-            int[] newTab = new int[this.size];
-            System.arraycopy(values, 0, newTab, 0, values.length);
-            newTab[this.size - 1] = -2;
-            this.values = newTab;
-    }
-    public int[] getValues() { // metoda zwracajaca dlugosc tabeli
-        return values;
+    @Override
+    public void decreaseSpeed() {
+        speed = speed - 5;
+
     }
 
-    public int getSpeed() { // Odczyt predkosci
-        int speed =0;
-
-        for(int i = 0; i < this.values.length; i++) {
-            speed += this.values[i];
-        }
+    @Override
+    public int getSpeed() {
         return speed;
-
     }
 }
