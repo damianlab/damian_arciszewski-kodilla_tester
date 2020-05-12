@@ -22,4 +22,11 @@ int step = random.nextInt(50);
     public int getSpeed() {
         return speed;
     }
+
+    @Override
+    public String toString() {
+        return "Fiat{" +
+                "speed=" + speed +
+                '}';
+    }
 }

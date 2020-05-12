@@ -22,4 +22,11 @@ public class Opel implements Car{
     public int getSpeed() {
         return speed;
     }
+
+    @Override
+    public String toString() {
+        return "Opel{" +
+                "speed=" + speed +
+                '}';
+    }
 }
