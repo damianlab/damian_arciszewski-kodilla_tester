@@ -6,6 +6,7 @@ import com.kodilla.collections.interfaces.Square;
 import com.kodilla.collections.interfaces.Triangle;
 
 import java.util.Random;
+
 public class ShapeApplication {
 
     public static void main(String[] args) {

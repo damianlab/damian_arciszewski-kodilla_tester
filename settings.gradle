@@ -4,4 +4,5 @@ include 'kodilla-basic-tests'
 include 'com.kodilla.inheritance.homework'
 include 'untitled'
 include 'kodilla-collections'
+include 'kodilla-collections-advanced'
 
