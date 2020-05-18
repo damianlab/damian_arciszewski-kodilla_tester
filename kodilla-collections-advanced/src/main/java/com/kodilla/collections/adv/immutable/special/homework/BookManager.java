@@ -1,10 +1,9 @@
 package com.kodilla.collections.adv.immutable.special.homework;
 
-public class BookManager extends Book {
+public class BookManager {
 
-    public Book createBook(String title, String author) {
-        super(title, author);
-
-    }
+    // public Book createBook(String title, String author) {
+    //
+    // }
 
 }
