@@ -1,4 +1,5 @@
 package com.kodilla.collections.adv.immutable;
+import com.kodilla.collections.adv.immutable.BookHacked;
 
 public class ImmutableExample {
     public static void main(String[] args) {
