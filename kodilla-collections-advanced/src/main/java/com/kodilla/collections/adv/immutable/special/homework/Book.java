@@ -3,9 +3,11 @@ package com.kodilla.collections.adv.immutable.special.homework;
 import java.util.Objects;
 
 public class Book {
+    // pola
     private String title;
     private String author;
 
+    // konstruktor
     public Book(String title, String author) {
         this.title = title;
         this.author = author;

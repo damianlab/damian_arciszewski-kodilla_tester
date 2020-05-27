@@ -1,11 +1,7 @@
-package com.kodilla.collections.adv.immutable.homework;
-
-import com.kodilla.collections.adv.immutable.special.homework.BookManager;
+package com.kodilla.collections.adv.immutable.Exercise;
 
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
 public class Main {
     public static void main(String[] args) {

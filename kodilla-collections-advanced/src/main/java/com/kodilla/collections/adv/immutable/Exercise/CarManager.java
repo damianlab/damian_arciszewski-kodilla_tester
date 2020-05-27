@@ -1,6 +1,5 @@
-package com.kodilla.collections.adv.immutable.homework;
+package com.kodilla.collections.adv.immutable.Exercise;
 
-import com.kodilla.collections.adv.immutable.homework.Main;
 import java.util.*;
 
 public class CarManager {

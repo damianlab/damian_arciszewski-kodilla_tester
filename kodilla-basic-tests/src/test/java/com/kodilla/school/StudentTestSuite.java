@@ -9,7 +9,7 @@ public class StudentTestSuite {
     @Test
     public void shouldCalculateCorrectAveragesIfValuesAreInRange() { // testujemy klase student
         Student student = new Student("Martin"); // test polega na dodaniu studenta wraz z ocenami
-        student.addGeographyGrade(-1);
+        student.addGeographyGrade(4);
         student.addGeographyGrade(4);
         student.addGeographyGrade(2);
 

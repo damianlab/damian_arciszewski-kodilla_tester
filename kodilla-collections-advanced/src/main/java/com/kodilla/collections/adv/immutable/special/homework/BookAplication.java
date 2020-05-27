@@ -1,9 +1,6 @@
 package com.kodilla.collections.adv.immutable.special.homework;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 public class BookAplication {
     public static void main(String[] args) {
@@ -17,30 +14,42 @@ public class BookAplication {
 
         // Cast
         BookManager bookManager = new BookManager();
+        Book b1 = bookManager.createBook("Kamienie na szaniec", "A K");
+        Book b2 = bookManager.createBook("Czerwony Kapturek", "B G");
+        Book b3 = bookManager.createBook("Lalka", "B P");
+        Book b4 = bookManager.createBook("Czerwony Kapturek", "B G");
 
-        // New list with all books
-
-        List<Book> booksAdd = new ArrayList<>(books);
-        booksAdd.add(bookManager.createBook("Kamienie na szaniec","A K"));
-        booksAdd.add(bookManager.createBook("Kamienie na szaniec","A K"));
-
-       //Book book = Book("Ogniem i mieczem", "K F");
-
-        System.out.println(booksAdd.size());
-        for(Book book : booksAdd)
-           System.out.println(book); // book a books
+        books.add(b1);
+        books.add(b2);
+        books.add(b3);
+        books.add(b4);
 
 
+        if (b1 == b2) {
+            System.out.println("b1 ma ten sam adres co b2");
+        } else {
+            System.out.println("b1 ma inny adres niz b2");
+        }
+
+        if (b1 == b3) {
+            System.out.println("b1 ma ten sam adres co b3");
+        } else {
+            System.out.println("b1 ma inny adres niz b3");
+        }
+ /*
+        System.out.println("----Next part----");
+        System.out.println(books.size());
 
 
-       // String title = "Pan Tadeusz";
-       // String author = "C D";
-       // if(books.contains(new Book(title, author))) {
-       //     System.out.println(title + " is in the books set.");
-       // } else {
-       //     System.out.println(title + " is not in the books set.");
-      //  }
+        System.out.println("----Next part----");
 
+        for(Book book : books)
+            System.out.println(book); // book a books
+        System.out.println("----Next part counter ----");
+        
+for (int counter = 0; counter < books.size(); counter++) {
+    System.out.println(books.get(counter));
+} */
 
     }
 }
