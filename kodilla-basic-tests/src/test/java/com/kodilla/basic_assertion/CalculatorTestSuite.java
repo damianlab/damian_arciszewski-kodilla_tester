@@ -12,6 +12,6 @@ public class CalculatorTestSuite {
         int a = 5;
         int b = 8;
         int sumResult = calculator.sum(a, b);
-        assertEquals(20, sumResult);
+        assertEquals(13, sumResult);
     }
 }
