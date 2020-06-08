@@ -1,4 +1,4 @@
-package com.kodilla.collections.adv.immutable.Exercise.Association;
+package com.kodilla.collections.adv.immutable.Exercise.publication;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,8 +21,8 @@ public class PublicationsMain {
         publications.add(p3);
         publications.add(p4);
 
-        BookCollection bookCollection = new BookCollection(publications);
-        List<Publication> publ = bookCollection.getTotalBooksInCollection();
+        PublicationCollection publicationCollection = new PublicationCollection(publications);
+        List<Publication> publ = publicationCollection.getTotalBooksInCollection();
         System.out.println(p3 == p1);
         System.out.println(p3.equals(p4));
         for(Publication pub : publ ) {

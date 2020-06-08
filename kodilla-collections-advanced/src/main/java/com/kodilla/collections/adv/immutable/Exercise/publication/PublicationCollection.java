@@ -1,13 +1,13 @@
-package com.kodilla.collections.adv.immutable.Exercise.Association;
+package com.kodilla.collections.adv.immutable.Exercise.publication;
 
 import java.util.List;
 
-public class BookCollection {
+public class PublicationCollection {
     // reference to refer to list of publications.
 
     private final List<Publication> publications;
 
-    BookCollection (List<Publication> publications) {
+    PublicationCollection (List<Publication> publications) {
         this.publications = publications;
     }
     // metoda

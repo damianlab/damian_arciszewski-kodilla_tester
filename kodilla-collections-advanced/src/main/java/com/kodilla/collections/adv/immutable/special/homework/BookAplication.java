@@ -36,11 +36,14 @@ public class BookAplication {
         } else {
             System.out.println("b1 ma inny adres niz b3");
         }
- /*
+
         System.out.println("----Next part----");
         System.out.println(books.size());
+        for(Book bf : books)
+            System.out.println(bf.getAuthor() + " - " + bf.getTitle());
 
-
+        //System.out.println(books);
+/*
         System.out.println("----Next part----");
 
         for(Book book : books)
@@ -52,4 +55,11 @@ for (int counter = 0; counter < books.size(); counter++) {
 } */
 
     }
+    private static void printBooks(List<Book> books) {
+        System.out.println(books.size());
+        for (Book book : books) {
+            System.out.println(book);
+        }
+    }
+
 }

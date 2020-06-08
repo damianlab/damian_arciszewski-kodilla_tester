@@ -1,4 +1,4 @@
-package com.kodilla.collections.adv.immutable.Exercise.Association;
+package com.kodilla.collections.adv.immutable.Exercise.publication;
 
 import java.util.Objects;
 

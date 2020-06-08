@@ -5,4 +5,5 @@ include 'com.kodilla.inheritance.homework'
 include 'untitled'
 include 'kodilla-collections'
 include 'kodilla-collections-advanced'
+include 'kodilla-stream'
 
