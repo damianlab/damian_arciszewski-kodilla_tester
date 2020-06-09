@@ -7,13 +7,15 @@ import java.util.stream.Collectors;
 public class TaskManager {
     public static void main(String[] args) {
        LocalDate currentDate = LocalDate.now();
-       List<LocalDate> deadlineTask = TaskRepository.getTask()
+       List<Task> deadlineTask = TaskRepository.getTask()
             .stream()
             .filter(u -> u.getDeadline().isAfter(currentDate))
-            .map(Task::getDeadline)
+            //.map(Task::getDeadline)
             .collect(Collectors.toList());
-
-        System.out.println("Dates not expired: \n" + deadlineTask);
+        System.out.println("Dates not expired: ");
+for(Task taskValid : deadlineTask)
+    System.out.println(taskValid.getName() + " - " + taskValid.getDeadline());
+      //  System.out.println("Dates not expired: \n" + deadlineTask);
 
        /* List<String> taskname = TaskRepository.getTask()
         .stream()
