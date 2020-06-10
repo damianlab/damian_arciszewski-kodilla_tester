@@ -46,4 +46,14 @@ public class User {
     public int hashCode() {
         return Objects.hash(getUsername(), getAge(), getNumberOfPosts(), getGroup());
     }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "username='" + username + '\'' +
+                ", age=" + age +
+                ", numberOfPosts=" + numberOfPosts +
+                ", group='" + group + '\'' +
+                '}';
+    }
 }

@@ -16,6 +16,7 @@ public class Application {
         // for(Student stu : students) System.out.println("Student name: " + stu.getName() + " - " + "Teacher name: " + stu.getTeacher());
         for(Student stu : students) {
             System.out.println("Student name: " + stu.getName() + " - " + "Teacher name: " + Optional.ofNullable(stu.getTeacher()).map(u -> u.getName()).orElse("<undefined>"));
+
         }
     }
 }
