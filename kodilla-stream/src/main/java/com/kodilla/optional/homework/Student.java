@@ -32,4 +32,12 @@ public class Student {
     public int hashCode() {
         return Objects.hash(getName(), getTeacher());
     }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "name='" + name + '\'' +
+                ", teacher=" + teacher +
+                '}';
+    }
 }
