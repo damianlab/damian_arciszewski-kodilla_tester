@@ -4,22 +4,22 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class Warehouse {
-
     private Set<Order> orders;
 
     public Warehouse() {
-        this.orders = new HashSet<>();
+        orders = new HashSet<>();
     }
 
     public void addOrder(Order order) {
         orders.add(order);
     }
+
     public Order getOrder(String number) throws OrderDoesntExistException {
-        return  orders.stream()
-                .filter(order -> order.getNumber().equals(number))
-                .findFirst()
+        return orders.stream()
+                .filter(order -> order.getNumber().equals(number)).findFirst()
                 .orElseThrow(OrderDoesntExistException::new);
     }
+
 }
    
 

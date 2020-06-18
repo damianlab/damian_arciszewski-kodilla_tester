@@ -3,19 +3,17 @@ package com.kodilla.exception.homework;
 public class WarehouseApp {
     public static void main(String[] args) {
         Warehouse warehouse = new Warehouse();
-        warehouse.addOrder(new Order("1/1/2020"));
-        warehouse.addOrder(new Order("2/2/2020"));
-        warehouse.addOrder(new Order("3/3/2020"));
-        warehouse.addOrder(new Order("4/4/2020"));
+        warehouse.addOrder(new Order("1234"));
+        warehouse.addOrder(new Order("1236"));
+        warehouse.addOrder(new Order("1235"));
 
         try {
-            Order order = warehouse.getOrder("1/5/2020");
-            System.out.println("Existing order: " + order);
+            System.out.println(warehouse.getOrder("1234"));
+            System.out.println("Znaleziono zamowienie po numerze 1234");
         } catch (OrderDoesntExistException e) {
-            System.out.println("Order can not be found");
-        } finally {
-            System.out.println("Search completed");
+            System.out.println("Nie znaleziono zamowienia po numerze 1234");
+//            e.printStackTrace();
         }
-
     }
+
 }
