@@ -1,6 +1,5 @@
 package com.kodilla.execution_model.homework;
 
-
 import org.junit.jupiter.api.*;
 
 import java.time.LocalDate;
@@ -72,7 +71,7 @@ Order order05 = new Order(1530, LocalDate.of(2017, 4, 1), "sara");
 
     @Test
     public void shouldReturnEmptyListWhenNoOrdersInValueRange() {
-        //Given
+        // Given
 
         // invoice.addItem(milk);
         // invoice.addItem(eggs);
@@ -81,20 +80,37 @@ Order order05 = new Order(1530, LocalDate.of(2017, 4, 1), "sara");
         //when
         List<Order> emptyList = shop.getOrdersInValueRange(40, 60);
 
-//Then
+        //Then
         assertEquals(Collections.emptyList(), emptyList);
     }
 
     @Test
     public void shouldGetOrdersTotalValue () {
-        // given
+        // Given
 
-        //When
-        double result = shop.getOrdersTotalValue();
+        // When
+        shop.getOrdersTotalValue();
 
+        // Then
         assertEquals(2108, shop.getOrdersTotalValue(), 0.01);
         }
 
+    @Test
+    public void shouldGetExistingOrder() {
+        // Given
+
+        // invoice.addItem(milk);
+        // invoice.addItem(eggs);
+        // invoice.addItem(bread);
+
+        // When
+        Order result = shop.getOrder(2);
+
+        // Then
+        assertEquals("jas", result.getUserLogin());
+        assertEquals(160, result.getOrderValue());
+
+    }
 
     @BeforeEach
     public void initializeShop() {

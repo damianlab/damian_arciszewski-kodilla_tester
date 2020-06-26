@@ -1,5 +1,7 @@
 package com.kodilla.execution_model.homework;
 
+import com.kodilla.execution_model.Item;
+
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
@@ -44,5 +46,12 @@ zsumowanie wartości wszystkich zamówień.
                 .map(t -> t.getOrderValue())
                 .mapToDouble(t -> t)
                 .sum();
+    }
+
+    public Order getOrder(int index) {
+        if(index >= 0 && index < orders.size()) {
+            return this.orders.get(index);
+        }
+        return null;
     }
 }
