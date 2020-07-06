@@ -1,0 +1,75 @@
+
+CREATE TABLE ISSUESLISTS
+
+(
+    ID          SERIAL PRIMARY KEY,  
+    NAME   VARCHAR(100)	
+);
+
+CREATE TABLE ISSUES
+(
+    ID          		SERIAL PRIMARY KEY, 
+    ISSUESLIST_ID		BIGINT UNSIGNED NOT NULL,
+    SUMMARY        		VARCHAR(100),
+	DESCRIPTION			VARCHAR(1024),
+	USER_ID_ASSIGNEDTO 	BIGINT UNSIGNED NOT NULL,
+    FOREIGN KEY (ISSUESLIST_ID) REFERENCES ISSUESLISTS(ID),
+	FOREIGN KEY (USER_ID_ASSIGNEDTO) REFERENCES USERS(ID)
+); 
+
+INSERT INTO ISSUESLISTS (NAME)
+VALUES ("ToDo");
+
+INSERT INTO ISSUESLISTS (NAME)
+VALUES ("In progress");
+
+INSERT INTO ISSUESLISTS (NAME)
+VALUES ("Done");
+
+INSERT INTO ISSUES (ISSUESLIST_ID, SUMMARY, DESCRIPTION, USER_ID_ASSIGNEDTO )
+VALUES (1, "Clean up toys  ", "Pick up toys after use and put them in the proper place.", 1);
+
+INSERT INTO ISSUES(ISSUESLIST_ID, SUMMARY, DESCRIPTION, USER_ID_ASSIGNEDTO )
+VALUES (1, "Grocery list  ", "Check all products and write down grocery list.", 2);
+
+INSERT INTO ISSUES(ISSUESLIST_ID, SUMMARY, DESCRIPTION, USER_ID_ASSIGNEDTO )
+VALUES (1, "Make lunch", "Make lunch and healthy snacks.", 3);
+
+INSERT INTO ISSUES (ISSUESLIST_ID, SUMMARY, DESCRIPTION, USER_ID_ASSIGNEDTO )
+VALUES (1, "Walk with pats", "Take pets for a walk.", 3);
+
+INSERT INTO ISSUES (ISSUESLIST_ID, SUMMARY, DESCRIPTION, USER_ID_ASSIGNEDTO )
+VALUES (1, "Taking out the trash", "Collect and take out garbage.", 4);
+
+INSERT INTO ISSUES (ISSUESLIST_ID, SUMMARY, DESCRIPTION, USER_ID_ASSIGNEDTO )
+VALUES (2, "Clean Windows", "Clean windows with hot water and distilled vinegar.", 4);
+
+INSERT INTO ISSUES (ISSUESLIST_ID, SUMMARY, DESCRIPTION, USER_ID_ASSIGNEDTO )
+VALUES (2, "Wash the car", "Clean car with hot water and distilled vinegar.", 5);
+
+INSERT INTO ISSUES (ISSUESLIST_ID, SUMMARY, DESCRIPTION, USER_ID_ASSIGNEDTO )
+VALUES (2, "Mopping floors", "Mop a floor with hot water and mopping detergent.", 5);
+
+INSERT INTO ISSUES (ISSUESLIST_ID, SUMMARY, DESCRIPTION, USER_ID_ASSIGNEDTO )
+VALUES (2, "Shampooing the carpets", "Clean all carpets with hot water and Carpet Cleaner.", 3);
+
+INSERT INTO ISSUES (ISSUESLIST_ID, SUMMARY, DESCRIPTION, USER_ID_ASSIGNEDTO )
+VALUES (2, "Doing laundry", "Collect dirty laundry and set up the ptogram.", 3);
+
+INSERT INTO ISSUES (ISSUESLIST_ID, SUMMARY, DESCRIPTION, USER_ID_ASSIGNEDTO )
+VALUES (3, "Clean blinds", "Clean blinds with designated detergent", 1);
+
+INSERT INTO ISSUES (ISSUESLIST_ID, SUMMARY, DESCRIPTION, USER_ID_ASSIGNEDTO )
+VALUES (3, "Vacuuming", "Vacuum all rooms and corridors", 1);
+
+INSERT INTO ISSUES (ISSUESLIST_ID, SUMMARY, DESCRIPTION, USER_ID_ASSIGNEDTO )
+VALUES (3, "Watering plants", "GO around the garden and water plants", 2);
+
+INSERT INTO ISSUES (ISSUESLIST_ID, SUMMARY, DESCRIPTION, USER_ID_ASSIGNEDTO )
+VALUES (3, "Cleaning bathrooms", "Clean all surfaces with hot water and soap", 1);
+
+INSERT INTO ISSUES (ISSUESLIST_ID, SUMMARY, DESCRIPTION, USER_ID_ASSIGNEDTO )
+VALUES (3, "Mowing the lawn", "Use a mower to mow the grass.", 1);
+
+COMMIT;
+

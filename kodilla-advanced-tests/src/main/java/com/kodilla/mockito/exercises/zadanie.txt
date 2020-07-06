@@ -1,0 +1,11 @@
+Serwis YouTube
+Kanały -> Filmy -> Kategorie
+
+Tworzymy serwis YT, w którym użytkownicy mogą subskrybować na dodanie jakiegokolwiek filmu na kanał lub dodanie go tylko
+na odpowiednią kategorie.
+- dodaj subskrybenta na wszystko/na kategorie na dany kanał (parametry kanał, użytkowik) (parametry kanał, użytkownik, kategoria)
+- usun sybskrybenta - || - || -
+- dodaj film do kanału (metoda przyjmuje jako parametry kanał, film) -> od razu po dodaniu ma wyslac powiadomienie do odpowiednich osob
+- *** zmien kategorie filmu na kanale (kanal, film, nowa kategoria) -> od razu po zmianie kategorii filmu ma wyslac powiadomienia do odpowiednich osob
+
+- - - jezeli ktos subskrybuje dany kanał jednoczesnie na wszystkie filmy i kategorie to dostaje tylko jedno powiadomienie po dodaniu tam filmu
