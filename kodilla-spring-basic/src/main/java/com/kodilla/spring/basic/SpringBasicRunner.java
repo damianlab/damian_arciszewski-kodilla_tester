@@ -9,9 +9,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class SpringBasicRunner {
     public static void main(String[] args) {
-        MessageService messageService = new FacebookMessageService();
-        SimpleApplication application = new SimpleApplication(messageService);
-        application.processMessage("Test message", "receiver@mail.com");
 
     }
 }
