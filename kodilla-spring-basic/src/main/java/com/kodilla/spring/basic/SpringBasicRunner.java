@@ -1,9 +1,5 @@
 package com.kodilla.spring.basic;
 
-import com.kodilla.spring.basic.dependency_injection.FacebookMessageService;
-import com.kodilla.spring.basic.dependency_injection.MessageService;
-import com.kodilla.spring.basic.dependency_injection.SimpleApplication;
-import com.kodilla.spring.basic.exercises.exercises_dependency_injection.Application;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
