@@ -1,12 +1,11 @@
-package seasonchecker;
-
+package numberchecker;
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = {"src/test/resources/seasonchecker"}
+        features = {"src/test/resources/numberchecker"}
 )
-public class TestRunner {
+public class NumberRunner {
 }
