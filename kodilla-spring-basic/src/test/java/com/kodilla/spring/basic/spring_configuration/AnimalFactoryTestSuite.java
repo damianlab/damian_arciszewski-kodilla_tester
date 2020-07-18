@@ -17,7 +17,7 @@ public class AnimalFactoryTestSuite {
     public void testDogCreated() {
         // given
         ApplicationContext context = new AnnotationConfigApplicationContext("com.kodilla.spring");
-        Dog dog = context.getBean(Dog.class);
+        Dog dog = (Dog) context.getBean("createDog");
 
         // when
         String voice = dog.getVoice();

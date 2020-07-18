@@ -8,7 +8,7 @@ public class Triangle extends Shape {
 
     @Override
     public double getArea() {
-        double i = 0.5 * getSideA() + getHeigh();
+        double i = 0.5 * getSideA() * getHeigh();
         System.out.println("Area of" + " " + getName() + " " + "is" + " " + i);
         return i;
     }

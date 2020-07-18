@@ -1,7 +1,8 @@
+
 public class LeapYear {
 
-          int year;
-        boolean leapYear;
+    int year;
+    boolean leapYear;
 
     public LeapYear(int year) {
         this.year = year;
